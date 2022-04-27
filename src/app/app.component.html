@@ -1,0 +1,35 @@
+<div class="container">
+  <h2>Basic Detail</h2>
+  <form [formGroup]="detailform" (ngSubmit)="addDetail()">
+    <div class="info-form">
+      <label
+        >First Name:
+        <input
+          type="text"
+          placeholder="First Name"
+          formControlName="firstname"
+        />
+      </label>
+      <label
+        >Last Name:
+        <input type="text" placeholder="Last Name" formControlName="lastName" />
+      </label>
+      <label
+        >Date Of Birth:
+        <input type="date" formControlName="dob" />
+      </label>
+      <label
+        >City:
+        <input type="text" placeholder="city" formControlName="city" />
+      </label>
+      <button>Add</button>
+    </div>
+  </form>
+</div>
+
+<ag-grid-angular
+  style="width: 500px; height: 500px; margin: auto;"
+  class="ag-theme-balham"
+  [gridOptions]="gridOptionsTest"
+>
+</ag-grid-angular>
